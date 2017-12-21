@@ -1,0 +1,58 @@
+﻿@model LifeGoalTracker.Controllers.Day
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Day</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ADay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pompodoros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pompodoros)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cigarettes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cigarettes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StrongCigarettes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StrongCigarettes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Exercise)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
